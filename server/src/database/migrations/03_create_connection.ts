@@ -8,16 +8,15 @@ export async function up(knex: Knex) {
       .notNullable()
       .references('id')
       .inTable('users')
-      .onUpdate('CASCADE')
-      .onDelete('CASCADE');
+      .onDelete('CASCADE')
+      .onUpdate('CASCADE');
 
     table.timestamp('created_at')
       .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
       .notNullable();
-  })
-  
+  });
 }
 
 export async function down(knex: Knex) {
- return knex.schema.dropTable('connections')
+  return knex.schema.dropTable('connections');
 }

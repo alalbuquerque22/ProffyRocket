@@ -17,22 +17,21 @@ function StudyTabs() {
         style: {
           elevation: 0,
           shadowOpacity: 0,
-          height: Platform.OS === 'ios' ? 84 : 64,//a linha que foi modificada vai garantir que quando o sistema do dispositivo for iOS, o height tenha o valor 84 e se for Android o height vai ter o valor 64 .
+          height: Platform.OS === 'ios' ? 84 : 64,
         },
         tabStyle: {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
-          paddingBottom: Platform.OS === 'ios' ? 20 : 0, // nesse trecho vamos adicionar uma nova propriedade para aplicar um paddingBottom para iOS. 
-
+          paddingBottom: Platform.OS === 'ios' ? 20 : 0,
         },
         safeAreaInsets: {
-          bottom: 0, //Ela garante que a Bottom Tab Bar não dê nenhum espaçamento da "área de segurança" na parte de baixo do iPhone
+          bottom: 0,
         },
         iconStyle: {
           flex: 0,
           width: 20,
-          height: Platform.OS === 'ios' ? 24 : 20, //essa modificação vai fazer com que o ícone não tenha um pedaço da parte de baixo cortada
+          height: Platform.OS === 'ios' ? 24 : 20,
         },
         labelStyle: {
           fontFamily: 'Archivo_700Bold',

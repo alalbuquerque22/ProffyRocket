@@ -101,7 +101,7 @@ Depois leia o QRCode com o app do [expo](https://play.google.com/store/apps/deta
 
 # :closed_book: Licencia
 
-Lançado em 2020 :closed_book: Licencia
+Lançado em 2020 :closed_book: Licenca
 
 Esse projeto esta sobre [MIT license](./LICENSE).
 
